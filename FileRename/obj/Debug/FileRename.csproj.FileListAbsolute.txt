@@ -1,0 +1,9 @@
+F:\bitBocket\fileRename\FileRename\FileRename\bin\Debug\FileRename.exe.config
+F:\bitBocket\fileRename\FileRename\FileRename\bin\Debug\FileRename.exe
+F:\bitBocket\fileRename\FileRename\FileRename\bin\Debug\FileRename.pdb
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.csprojResolveAssemblyReference.cache
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.Form1.resources
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.Properties.Resources.resources
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.exe
+F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.pdb
