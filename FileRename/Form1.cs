@@ -13,7 +13,8 @@ namespace FileRename
 {
     public partial class Form1 : Form
     {
-
+        string SelectedPath = string.Empty;
+        List<string> files = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -23,15 +24,19 @@ namespace FileRename
         {
             FolderBrowserDialog obj = new FolderBrowserDialog();
             DialogResult dr = obj.ShowDialog();
-            lblFolderPAth.Text = obj.SelectedPath;
-            GetAllFileName(obj.SelectedPath);
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                lblFolderPAth.Text = obj.SelectedPath;
+                SelectedPath = obj.SelectedPath;
+                GetAllFileName();
+            }
         }
 
-        private void GetAllFileName(string SelectedPath)
+        private void GetAllFileName()
         {
-            string[] files = Directory.GetFiles(SelectedPath,
-        "*.*",
-        SearchOption.AllDirectories);
+            files = Directory.GetFiles(SelectedPath,
+       "*." + txtExtension.Text.Trim(),
+       SearchOption.TopDirectoryOnly).ToList();
             // Display all the files.
             List<string> fileName = new List<string>();
             foreach (string file in files)
@@ -39,6 +44,32 @@ namespace FileRename
                 fileName.Add(Path.GetFileName(file));
             }
             lstFiles.DataSource = fileName;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (string file in files)
+            {
+                if (File.Exists(file))
+                {
+                    Path.GetFileName(file);
+                    string OldFilePath = file;
+                    string NewFilePath = SelectedPath + "\\" + Path.GetFileName(file).Replace(txtOld1.Text, txtNew1.Text).Replace(txtOld2.Text, txtNew2.Text);
+                    File.Move(OldFilePath, NewFilePath);
+                    lblProcessDescription.Text = OldFilePath + " To " + NewFilePath;
+                }
+            }
+        }
+
+        private void btnPReview_Click(object sender, EventArgs e)
+        {
+            // Display all the files.
+            List<string> fileName = new List<string>();
+            foreach (string file in files)
+            {
+                fileName.Add(Path.GetFileName(file).Replace(txtOld1.Text, txtNew1.Text).Replace(txtOld2.Text, txtNew2.Text));
+            }
+            lstRenameFile.DataSource = fileName;
         }
     }
 }
