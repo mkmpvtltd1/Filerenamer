@@ -7,3 +7,12 @@ F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.Properties.Re
 F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
 F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.exe
 F:\bitBocket\fileRename\FileRename\FileRename\obj\Debug\FileRename.pdb
+E:\!! Github !!\FileRename\FileRename\bin\Debug\FileRename.exe.config
+E:\!! Github !!\FileRename\FileRename\bin\Debug\FileRename.exe
+E:\!! Github !!\FileRename\FileRename\bin\Debug\FileRename.pdb
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.csprojResolveAssemblyReference.cache
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.Form1.resources
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.Properties.Resources.resources
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.exe
+E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.pdb
