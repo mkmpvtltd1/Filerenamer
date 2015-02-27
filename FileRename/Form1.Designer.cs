@@ -68,14 +68,16 @@
             // 
             this.lstFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lstFiles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstFiles.FormattingEnabled = true;
             this.lstFiles.Location = new System.Drawing.Point(13, 42);
             this.lstFiles.Name = "lstFiles";
-            this.lstFiles.Size = new System.Drawing.Size(218, 160);
+            this.lstFiles.Size = new System.Drawing.Size(218, 158);
             this.lstFiles.TabIndex = 2;
             // 
             // btnRenameFiles
             // 
+            this.btnRenameFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRenameFiles.Location = new System.Drawing.Point(143, 214);
             this.btnRenameFiles.Name = "btnRenameFiles";
             this.btnRenameFiles.Size = new System.Drawing.Size(125, 23);
@@ -88,14 +90,17 @@
             // 
             this.lstRenameFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstRenameFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstRenameFile.FormattingEnabled = true;
             this.lstRenameFile.Location = new System.Drawing.Point(436, 42);
             this.lstRenameFile.Name = "lstRenameFile";
-            this.lstRenameFile.Size = new System.Drawing.Size(203, 160);
+            this.lstRenameFile.Size = new System.Drawing.Size(203, 158);
             this.lstRenameFile.TabIndex = 4;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(238, 42);
             this.label1.Name = "label1";
@@ -105,6 +110,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(338, 42);
             this.label2.Name = "label2";
@@ -118,35 +125,39 @@
             this.txtExtension.Name = "txtExtension";
             this.txtExtension.Size = new System.Drawing.Size(57, 20);
             this.txtExtension.TabIndex = 7;
-            this.txtExtension.Text = "sql";
+            this.txtExtension.Text = "*.*";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.Size = new System.Drawing.Size(96, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Extenson To Filter";
+            this.label3.Text = "Filter pattern of file:";
             // 
             // txtOld1
             // 
+            this.txtOld1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOld1.Location = new System.Drawing.Point(241, 59);
             this.txtOld1.Name = "txtOld1";
             this.txtOld1.Size = new System.Drawing.Size(82, 20);
             this.txtOld1.TabIndex = 9;
-            this.txtOld1.Text = "sql.";
             // 
             // txtOld2
             // 
+            this.txtOld2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOld2.Location = new System.Drawing.Point(241, 85);
             this.txtOld2.Name = "txtOld2";
             this.txtOld2.Size = new System.Drawing.Size(82, 20);
             this.txtOld2.TabIndex = 10;
-            this.txtOld2.Text = ".storeprocedure.";
             // 
             // txtNew1
             // 
+            this.txtNew1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNew1.Location = new System.Drawing.Point(341, 58);
             this.txtNew1.Name = "txtNew1";
             this.txtNew1.Size = new System.Drawing.Size(83, 20);
@@ -154,14 +165,16 @@
             // 
             // txtNew2
             // 
+            this.txtNew2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNew2.Location = new System.Drawing.Point(341, 85);
             this.txtNew2.Name = "txtNew2";
             this.txtNew2.Size = new System.Drawing.Size(83, 20);
             this.txtNew2.TabIndex = 12;
-            this.txtNew2.Text = ".";
             // 
             // btnPReview
             // 
+            this.btnPReview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnPReview.Location = new System.Drawing.Point(12, 214);
             this.btnPReview.Name = "btnPReview";
             this.btnPReview.Size = new System.Drawing.Size(125, 23);
@@ -172,6 +185,7 @@
             // 
             // lblProcessDescription
             // 
+            this.lblProcessDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblProcessDescription.AutoSize = true;
             this.lblProcessDescription.Location = new System.Drawing.Point(288, 219);
             this.lblProcessDescription.Name = "lblProcessDescription";

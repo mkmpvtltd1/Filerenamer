@@ -16,3 +16,12 @@ E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.Properties.Resources.
 E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
 E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.exe
 E:\!! Github !!\FileRename\FileRename\obj\Debug\FileRename.pdb
+F:\!! github !!\FileRename\FileRename\bin\Debug\FileRename.exe.config
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.exe
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.pdb
+F:\!! github !!\FileRename\FileRename\bin\Debug\FileRename.exe
+F:\!! github !!\FileRename\FileRename\bin\Debug\FileRename.pdb
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.csprojResolveAssemblyReference.cache
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Form1.resources
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Properties.Resources.resources
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
