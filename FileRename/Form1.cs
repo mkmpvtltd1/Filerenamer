@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileRename.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace FileRename
     {
         string SelectedPath = string.Empty;
         List<string> files = new List<string>();
+        List<Replacer> lstReplacer = new List<Replacer>();
         public Form1()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace FileRename
         private void GetAllFileName()
         {
             files = Directory.GetFiles(SelectedPath,
-       "*." + txtExtension.Text.Trim(),
+        txtExtension.Text.Trim(),
        SearchOption.TopDirectoryOnly).ToList();
             // Display all the files.
             List<string> fileName = new List<string>();
@@ -44,7 +46,11 @@ namespace FileRename
             {
                 fileName.Add(Path.GetFileName(file));
             }
-            lstFiles.DataSource = fileName;
+            for (int i = 0; i < fileName.Count; i++)
+            {
+                FileRenamedPreview obj = new FileRenamedPreview(fileName[i], fileName[i]) { Location = new Point(0, 20 * i + 20) };
+                pnlViewer.Controls.Add(obj);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,5 +78,23 @@ namespace FileRename
             }
             lstRenameFile.DataSource = fileName;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Replacer obj = new Replacer();
+            lstReplacer.Add(obj);
+            bindReplacer();
+        }
+
+        private void bindReplacer()
+        {
+            for (int i = 0; i < lstReplacer.Count; i++)
+            {
+                lstReplacer[i].Location = new Point(2, i * 20 + 20);
+                pnlReplacer.Controls.Add(lstReplacer[i]);
+            }
+        }
+
+
     }
 }

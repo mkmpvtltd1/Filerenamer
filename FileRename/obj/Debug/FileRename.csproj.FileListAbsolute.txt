@@ -25,3 +25,5 @@ F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.csprojResolveAssembly
 F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Form1.resources
 F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Properties.Resources.resources
 F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.csproj.GenerateResource.Cache
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Controls.Replacer.resources
+F:\!! github !!\FileRename\FileRename\obj\Debug\FileRename.Controls.FileRenamedPreview.resources
